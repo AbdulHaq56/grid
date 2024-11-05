@@ -6,44 +6,56 @@
 
 body {
   display: grid;
-  grid-template-rows: 80px 300px 300px 150px;
+  grid-template-rows: 90px 320px 325px 150px;
   height: 100vh;
-  gap: 15px;
+  gap: 3px;
 }
 
 header {
   display: grid;
   grid-template-columns: 10% 90%;
-  border: 2px solid black;
 }
 
 .logo {
   border-right: 2px solid black;
+  background: #333333;
 }
 
-main,
-section,
-footer {
-  border: 2px solid black;
-}
-
-.row {
-  display: grid;
-  height: 250px;
-  width: 100%;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
-}
-.col {
-  margin: auto;
-  border: 1px solid black;
-  height: 150px;
-  width: 150px;
-  background: grey;
+navbar {
+  background: #ffd700;
 }
 
 main {
   width: 85%;
   margin: 0 auto;
+  background: #5c5cf5;
 }
 
+section {
+  display: grid;
+  width: 100%;
+  background: #c0c0c0;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.col {
+  margin: auto;
+  height: 150px;
+  width: 150px;
+  background: #3939f3;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.col:hover {
+  width: 160px;
+  height: 160px;
+  cursor: pointer;
+  background: #2a2af3;
+}
+
+footer {
+  background: #ffd700;
+}
